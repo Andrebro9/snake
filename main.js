@@ -81,8 +81,8 @@ function move(x, y) {
 }
 
 function spawnApple() {
-    let x = random(0, col)
-    let y = random(0, col)
+    let x = random(1, col)
+    let y = random(1, col)
 
     while(true) {
         if (!(x == snakeCordX && y ==snakeCordY)) break
