@@ -1,0 +1,83 @@
+body {
+    background-image: url("./foto.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+
+
+/* Строка */
+.row { 
+    display: flex;
+}
+
+/* Блок */
+.block {
+    width: 30px;
+    height: 30px;
+    border: solid black .1px;
+}
+
+/* Арена */
+.area {
+    margin: 12px;
+}
+
+/* Главные контент */
+main {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Шапка */
+header {
+    background-color: rgba(255, 255, 255, 0.4);
+    padding: 20px;
+}
+header > button {
+    position: relative;
+    left: 90%; 
+}
+
+
+/* Очки */
+.counter {
+    position: relative;
+    left: 60%;
+    display: inline-block;
+    font-size: 20px; 
+}
+.counter {
+    color: black;
+    font-size: 26px;
+    font-weight: bold;
+}
+
+
+/* Змея */
+.snake {
+    background-color: rgb(255, 0, 191);
+}
+
+
+/* Яблоко */
+.apple {
+    background-color: rgb(255, 0, 0);
+    border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

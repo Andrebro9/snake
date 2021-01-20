@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Игра жизни</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  
+    <!-- Шапка -->
+    <header>
+
+      <!-- Очки -->
+      <div class="counter">
+        <span>Очков: </span>
+        <span class="points">0</span>  
+      </div>
+      
+      <!-- Кнопка меню -->
+      <button style="display: none;" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Играть</button>
+    </header>
+
+
+    <!-- Основной контент -->
+    <main class="root">
+        <!-- Арена -->
+        <div class="area"></div>
+    </main>
+
+
+    <!-- Модальное окно, старта игры -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Игра жизни</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+
+            <!-- Форма ввода размера арены -->
+            <form>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Столбцы:</label>
+                <input placeholder="Введите Столбцы" type="text" class="form-control input-col" id="recipient-name" value="20">
+              </div>
+              <div class="mb-3">
+                <label for="recipient-name" class="col-form-label">Строки:</label>
+                <input placeholder="Введите Строки" type="text" class="form-control input-row" id="recipient-name" value="20">
+              </div>
+            </form>
+
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary btn-play" data-bs-dismiss="modal">Играть</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <script src='main.js'></script>
+</body>
+</html>
