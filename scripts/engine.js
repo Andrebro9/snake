@@ -219,5 +219,5 @@ function run() {
     }
     document.addEventListener('keydown', moveButtonController)
 
-    setInterval(moveController, 90 )
+    setInterval(moveController, 80 )
 }
